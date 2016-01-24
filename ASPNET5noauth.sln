@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EDF8A853-815E-436E-A5B1-A48355281EED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DDC27BCB-EE48-4F84-97B2-731AFA11EFFB}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ASPNET5noauth", "src\ASPNET5noauth\ASPNET5noauth.xproj", "{AF5D2136-42EF-4FA0-B341-D85157284ACD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF5D2136-42EF-4FA0-B341-D85157284ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF5D2136-42EF-4FA0-B341-D85157284ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF5D2136-42EF-4FA0-B341-D85157284ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF5D2136-42EF-4FA0-B341-D85157284ACD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AF5D2136-42EF-4FA0-B341-D85157284ACD} = {EDF8A853-815E-436E-A5B1-A48355281EED}
+	EndGlobalSection
+EndGlobal

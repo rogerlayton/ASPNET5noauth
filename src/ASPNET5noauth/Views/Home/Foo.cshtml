@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Foo Bar";
+}
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+<p>All about Foo Bar.</p>
+
+@for (int i = 0; i < 10; i++)
+{
+    <blockquote>@i = @ViewData["FooMsg"]</blockquote>
+}

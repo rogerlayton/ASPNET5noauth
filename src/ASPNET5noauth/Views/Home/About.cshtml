@@ -1,0 +1,33 @@
+﻿@model Person
+
+@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+<p>Use this area to provide additional information.</p>
+
+<ul>
+    <li>First Name: @Model.FirstName</li>
+    <li>Last Name: @Model.LastName</li>
+    <li>Birth Date: @Model.Birthdate.ToString("dd-MMM-yyyy")</li>
+</ul>
+
+<form class="form-inline" asp-controller="Home" asp-action="About" method="post">
+    <div class="text-danger" asp-validation-summary="ValidationSummary.All"></div>
+    <div class="form-group">
+        <label for="firstname">First Name:</label>
+        <input asp-for="FirstName" class="form-control"/>
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="lastname">Last Name:</label>
+        <input asp-for="LastName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="birthdate">Birth Date:</label>
+        <input asp-for="Birthdate" class="form-control"  />
+    </div>
+    <button class="btn btn-danger btn-default" type="submit" value="Submit">Submit</button>
+</form>
